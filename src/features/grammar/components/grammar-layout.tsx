@@ -1,8 +1,16 @@
-import AppContent from "@/components/app-content";
-import { PropsWithChildren } from "react";
+import AppContent, { AppContentProps } from "@/components/app-content";
+import { cn } from "@/lib/tw";
 
-export interface GrammarLayoutProps extends PropsWithChildren {}
+export interface GrammarLayoutProps extends AppContentProps {}
 
-export const GrammarLayout = ({ children }: GrammarLayoutProps) => {
-  return <AppContent className="py-8 px-4">{children}</AppContent>;
+export const GrammarLayout = ({
+  className,
+  children,
+  ...props
+}: GrammarLayoutProps) => {
+  return (
+    <AppContent className={cn("py-8 px-4", className)} {...props}>
+      {children}
+    </AppContent>
+  );
 };

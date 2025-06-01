@@ -142,7 +142,7 @@ export const WritingPractice = ({
           <Button variant="secondary" onClick={() => router.back()}>
             <ArrowLeft className="size-4" />
           </Button>
-          <h2 className="text-2xl font-bold">Chủ đề: Holiday Memories</h2>
+          <h2 className="text-title">Chủ đề: Holiday Memories</h2>
         </div>
 
         <div>

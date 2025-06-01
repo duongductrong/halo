@@ -6,7 +6,7 @@ export interface GrammarHeaderProps
 
 export const GrammarHeader = ({ className, ...props }: GrammarHeaderProps) => {
   return (
-    <h2 className={cn("text-2xl font-bold", className)} {...props}>
+    <h2 className={cn("text-title", className)} {...props}>
       Luyện ngữ pháp
     </h2>
   );

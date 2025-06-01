@@ -57,6 +57,11 @@
   --shadow-sinking-outline: inset 0 -1px 0 0 var(--secondary-accent);
 }
 
+@theme {
+  --text-title: 1.5rem;
+  --text-title--font-weight: 700;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);

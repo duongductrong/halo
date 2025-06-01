@@ -16,7 +16,7 @@ const WritingSectionPage = ({}: Props) => {
         <Button variant="secondary" onClick={() => router.back()}>
           <ArrowLeft className="size-4" />
         </Button>
-        <h2 className="text-2xl font-bold">
+        <h2 className="text-title">
           Phần 1: Làm quen với cách viết cơ bản
         </h2>
       </div>
