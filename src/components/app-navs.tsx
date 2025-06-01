@@ -18,21 +18,31 @@ const menuItems = [
     label: "Học viết",
     icon: "https://d35aaqx5ub95lt.cloudfront.net/vendor/784035717e2ff1d448c0f6cc4efc89fb.svg",
     to: "/writing",
+    disabled: true,
+  },
+  {
+    label: "Ngữ pháp",
+    icon: "https://cdn-icons-png.flaticon.com/512/12899/12899528.png",
+    to: "/grammar",
+    disabled: false,
   },
   {
     label: "Từ vựng",
     icon: "https://d35aaqx5ub95lt.cloudfront.net/vendor/5187f6694476a769d4a4e28149867e3e.svg",
     to: "/vocabulary",
+    disabled: true,
   },
   {
     label: "Bảng xếp hạng",
     icon: "https://d35aaqx5ub95lt.cloudfront.net/vendor/ca9178510134b4b0893dbac30b6670aa.svg",
     to: "/leaderboard",
+    disabled: true,
   },
   {
     label: "Nhiệm vụ",
     icon: "https://d35aaqx5ub95lt.cloudfront.net/vendor/7ef36bae3f9d68fc763d3451b5167836.svg",
     to: "/missions",
+    disabled: true,
   },
 ];
 
@@ -48,9 +58,11 @@ export const AppNavMain = () => {
           <SidebarMenuItem key={menu.label}>
             <SidebarMenuButton
               isActive={isActive(menu.to)}
+              aria-disabled={menu.disabled}
               className={cn(
                 "border-2 border-transparent h-14 cursor-pointer gap-7 text-muted-foreground hover:text-muted-foreground active:text-primary active:bg-primary/10 rounded-lg",
-                "data-[active=true]:border-primary data-[active=true]:bg-primary/15 data-[active=true]:text-primary"
+                "data-[active=true]:border-primary data-[active=true]:bg-primary/15 data-[active=true]:text-primary",
+                "aria-disabled:opacity-50 aria-disabled:cursor-not-allowed"
               )}
               asChild
             >

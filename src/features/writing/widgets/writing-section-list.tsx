@@ -5,7 +5,7 @@ import { WritingSectionCard } from "../components/writing-section-card";
 
 export interface WritingSectionListProps extends ComponentProps<"div"> {}
 
-const WritingSectionList = ({
+export const WritingSectionList = ({
   className,
   ...props
 }: WritingSectionListProps) => {
@@ -64,5 +64,3 @@ const WritingSectionList = ({
     </main>
   );
 };
-
-export default WritingSectionList;

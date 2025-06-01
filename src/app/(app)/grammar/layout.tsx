@@ -1,10 +1,10 @@
-import { WritingLayout } from "@/features/writing/widgets/writing-layout";
+import { GrammarLayout } from "@/features/grammar/widgets/grammar-layout";
 import { PropsWithChildren } from "react";
 
 type Props = PropsWithChildren;
 
 const Layout = ({ children }: Props) => {
-  return <WritingLayout>{children}</WritingLayout>;
+  return <GrammarLayout>{children}</GrammarLayout>;
 };
 
 export default Layout;

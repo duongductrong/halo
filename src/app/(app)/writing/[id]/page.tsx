@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import WritingTopicList from "@/features/writing/widgets/writing-topic-list";
+import { WritingTopicList } from "@/features/writing/widgets/writing-topic-list";
 import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 

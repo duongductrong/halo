@@ -121,7 +121,10 @@ export const EVALUATION = [
 
 export interface WritingPracticeProps extends ComponentProps<"div"> {}
 
-const WritingPractice = ({ className, ...props }: WritingPracticeProps) => {
+export const WritingPractice = ({
+  className,
+  ...props
+}: WritingPracticeProps) => {
   const router = useRouter();
 
   const [currentSentence] = useState(5);
@@ -222,5 +225,3 @@ const WritingPractice = ({ className, ...props }: WritingPracticeProps) => {
     </div>
   );
 };
-
-export default WritingPractice;

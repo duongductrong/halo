@@ -8,7 +8,10 @@ import { WritingTopicCard } from "../components/writing-topic-card";
 
 export interface WritingTopicListProps extends ComponentProps<"div"> {}
 
-const WritingTopicList = ({ className, ...props }: WritingTopicListProps) => {
+export const WritingTopicList = ({
+  className,
+  ...props
+}: WritingTopicListProps) => {
   const router = useRouter();
 
   return (
@@ -44,5 +47,3 @@ const WritingTopicList = ({ className, ...props }: WritingTopicListProps) => {
     </main>
   );
 };
-
-export default WritingTopicList;
