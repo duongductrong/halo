@@ -1,13 +1,15 @@
+"use client";
+
 import { FieldItem } from "@/components/form";
 import { useWatch } from "react-hook-form";
-import { useFormContext } from "../hooks/use-auth-form";
+import { useAuthFormContext } from "../hooks/use-auth-form";
 
 export interface AuthFormFieldsProps {
   loading?: boolean;
 }
 
 export const AuthFormFields = ({ loading }: AuthFormFieldsProps) => {
-  const form = useFormContext();
+  const form = useAuthFormContext();
 
   const [kindOf] = useWatch({
     control: form.control,
