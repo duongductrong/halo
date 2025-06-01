@@ -1,4 +1,4 @@
-import { GrammarLayout } from "@/features/grammar/widgets/grammar-layout";
+import { GrammarLayout } from "@/features/grammar";
 import { PropsWithChildren } from "react";
 
 type Props = PropsWithChildren;

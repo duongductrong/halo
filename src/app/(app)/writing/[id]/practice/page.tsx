@@ -1,4 +1,4 @@
-import { WritingPractice } from "@/features/writing/widgets/writing-practice";
+import { WritingPractice } from "@/features/writing";
 
 type Props = {};
 

@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/tw";
 import { useRouter } from "next/navigation";
 import { ComponentProps } from "react";

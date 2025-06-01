@@ -1,4 +1,4 @@
-import { WritingLayout } from "@/features/writing/widgets/writing-layout";
+import { WritingLayout } from "@/features/writing";
 import { PropsWithChildren } from "react";
 
 type Props = PropsWithChildren;

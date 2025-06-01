@@ -1,6 +1,6 @@
 "use client";
 
-import { WritingSectionList } from "@/features/writing/widgets/writing-section-list";
+import { WritingSectionList } from "@/features/writing";
 
 const WritingPage = () => {
   return (

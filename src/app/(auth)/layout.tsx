@@ -1,4 +1,4 @@
-import { AuthLayout } from "@/features/auth/components/auth-layout";
+import { AuthLayout } from "@/features/auth";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { PropsWithChildren } from "react";

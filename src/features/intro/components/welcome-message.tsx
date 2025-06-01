@@ -6,7 +6,7 @@ export interface WelcomeMessageProps {
   name: string;
 }
 
-const WelcomeMessage = ({ name }: WelcomeMessageProps) => {
+export const WelcomeMessage = ({ name }: WelcomeMessageProps) => {
   return (
     <main className="w-full h-dvh p-6 flex justify-center items-center">
       <div className="flex flex-col gap-2">
@@ -26,5 +26,3 @@ const WelcomeMessage = ({ name }: WelcomeMessageProps) => {
     </main>
   );
 };
-
-export default WelcomeMessage;
