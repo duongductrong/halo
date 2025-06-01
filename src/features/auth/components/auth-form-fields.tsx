@@ -1,6 +1,6 @@
 import { FieldItem } from "@/components/form";
 import { useWatch } from "react-hook-form";
-import { useFormContext } from "../hooks/use-form";
+import { useFormContext } from "../hooks/use-auth-form";
 
 export interface AuthFormFieldsProps {
   loading?: boolean;

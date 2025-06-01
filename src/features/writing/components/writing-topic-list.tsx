@@ -4,7 +4,7 @@ import { englishLevel } from "@/constants/english";
 import { cn } from "@/lib/tw";
 import { useRouter } from "next/navigation";
 import { ComponentProps } from "react";
-import { WritingTopicCard } from "../components/writing-topic-card";
+import { WritingTopicCard } from "./writing-topic-card";
 
 export interface WritingTopicListProps extends ComponentProps<"div"> {}
 

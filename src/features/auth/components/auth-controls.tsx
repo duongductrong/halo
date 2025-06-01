@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { useWatch } from "react-hook-form";
-import { useFormContext } from "../hooks/use-form";
+import { useAuthFormContext } from "../hooks/use-auth-form";
 
 export interface AuthControlsProps {
   isLoading: boolean;
 }
 
 export const AuthControls = ({ isLoading }: AuthControlsProps) => {
-  const form = useFormContext();
+  const form = useAuthFormContext();
 
   const [kindOf] = useWatch({
     control: form.control,

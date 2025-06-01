@@ -3,7 +3,7 @@
 import { cn } from "@/lib/tw";
 import { useRouter } from "next/navigation";
 import { ComponentProps } from "react";
-import { WritingSectionCard } from "../components/writing-section-card";
+import { WritingSectionCard } from "./writing-section-card";
 
 export interface WritingSectionListProps extends ComponentProps<"div"> {}
 
