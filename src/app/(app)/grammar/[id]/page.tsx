@@ -4,7 +4,8 @@ type Props = {
   };
 };
 
-const Page = ({ params: { id } }: Props) => {
+const Page = async ({ params }: Props) => {
+  const { id } = await params;
   return <div>Page: {id}</div>;
 };
 
