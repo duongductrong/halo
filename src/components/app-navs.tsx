@@ -15,31 +15,31 @@ import {
 
 const menuItems = [
   {
-    label: "Học viết",
+    label: "Writing",
     icon: "https://d35aaqx5ub95lt.cloudfront.net/vendor/784035717e2ff1d448c0f6cc4efc89fb.svg",
     to: "/writing",
     disabled: true,
   },
   {
-    label: "Ngữ pháp",
+    label: "Grammar",
     icon: "https://cdn-icons-png.flaticon.com/512/12899/12899528.png",
     to: "/grammar",
     disabled: false,
   },
   {
-    label: "Từ vựng",
+    label: "Vocabulary",
     icon: "https://d35aaqx5ub95lt.cloudfront.net/vendor/5187f6694476a769d4a4e28149867e3e.svg",
     to: "/vocabulary",
     disabled: true,
   },
   {
-    label: "Bảng xếp hạng",
+    label: "Leaderboard",
     icon: "https://d35aaqx5ub95lt.cloudfront.net/vendor/ca9178510134b4b0893dbac30b6670aa.svg",
     to: "/leaderboard",
     disabled: true,
   },
   {
-    label: "Nhiệm vụ",
+    label: "Missions",
     icon: "https://d35aaqx5ub95lt.cloudfront.net/vendor/7ef36bae3f9d68fc763d3451b5167836.svg",
     to: "/missions",
     disabled: true,

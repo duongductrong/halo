@@ -5,7 +5,7 @@ type Props = {};
 const Page = ({}: Props) => {
   return (
     <section className="flex flex-col gap-4">
-      <GrammarHeader />
+      <GrammarHeader>Grammar</GrammarHeader>
       <GrammarContent />
     </section>
   );
