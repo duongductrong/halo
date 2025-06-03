@@ -1,5 +1,5 @@
 import { cn } from "@/lib/tw";
-import { ComponentProps } from "react";
+import { ComponentProps, useMemo } from "react";
 import { ExerciseFillInBlank } from "./exercise-fill-in-blank";
 import { ExerciseSection } from "./exercise-section";
 
@@ -9,6 +9,71 @@ export const GrammarExerciseDocument = ({
   className,
   ...props
 }: GrammarExerciseDocumentProps) => {
+  const documents = useMemo(
+    () => [
+      {
+        id: "exercise-1",
+        name: "Affirmative Sentences",
+        description: "Practice forming affirmative sentences in present simple",
+        type: "fill-in-the-blank",
+        group: "affirmative",
+        questions: [
+          {
+            question: "He <input0> (play) basketball every weekend.",
+            answer: {
+              input0: "plays",
+            },
+          },
+          {
+            question: "They <input0> (live) in New York.",
+            answer: {
+              input0: "live",
+            },
+          },
+          {
+            question: "John <input0> (study) English twice a week.",
+            answer: {
+              input0: "studies",
+            },
+          },
+          {
+            question: "The dog <input0> (sleep) in the garden.",
+            answer: {
+              input0: "sleeps",
+            },
+          },
+          {
+            question: "My sister <input0> (teach) math at school.",
+            answer: {
+              input0: "teaches",
+            },
+          },
+        ],
+      },
+      {
+        id: "exercise-2",
+        name: "Negative Sentences",
+        description: "Practice forming negative sentences in present simple",
+        type: "fill-in-the-blank",
+        group: "negative",
+        questions: [
+          {
+            question: "He <input0> (not play) tennis.",
+            answer: {
+              input0: "doesn't play",
+            },
+          },
+          {
+            question: "They <input0> (not study) English.",
+            answer: {
+              input0: "don't study",
+            },
+          },
+        ],
+      },
+    ],
+    []
+  );
   return (
     <main {...props} className={cn("flex flex-col gap-6", className)}>
       <ExerciseSection label="Exercise 1: Affirmative Sentences">
@@ -177,7 +242,26 @@ export const GrammarExerciseDocument = ({
 
       <ExerciseSection label="Exercise 6: Paragraph">
         <ExerciseFillInBlank
-          question="Sarah <input0> (go) to the gym every morning. My parents <input1> (not watch) TV in the evening. <input2> your brother <input3> (speak) French? He <input4> (speak) English and French. John <input5> (work) at a hospital. They <input6> (not live) in London. <input7> Mary <input8> (study) at university? She <input9> (study) medicine. We <input10> (play) tennis on weekends. <input11> Tom <input12> (like) coffee? He <input13> (prefer) tea. The shop <input14> (open) at 8 AM. My sister <input15> (not drive) to work. <input16> the children <input17> (do) their homework? They <input18> (finish) it after dinner. The sun <input19> (rise) in the east. <input20> you <input21> (need) help? I <input22> (want) to learn Japanese. The train <input23> (arrive) at 9 PM. The birds <input24> (sing) in the morning."
+          question="Sarah <input0> (go) to the gym every morning.
+    My parents <input1> (not watch) TV in the evening.
+    <input2> your brother <input3> (speak) French?
+    He <input4> (speak) English and French.
+    John <input5> (work) at a hospital.
+    They <input6> (not live) in London.
+    <input7> Mary <input8> (study) at university?
+    She <input9> (study) medicine.
+    We <input10> (play) tennis on weekends.
+    <input11> Tom <input12> (like) coffee?
+    He <input13> (prefer) tea.
+    The shop <input14> (open) at 8 AM.
+    My sister <input15> (not drive) to work.
+    <input16> the children <input17> (do) their homework?
+    They <input18> (finish) it after dinner.
+    The sun <input19> (rise) in the east.
+    <input20> you <input21> (need) help?
+    I <input22> (want) to learn Japanese.
+    The train <input23> (arrive) at 9 PM.
+    The birds <input24> (sing) in the morning."
           answer={{
             input0: "goes",
             input1: "don't watch",

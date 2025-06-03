@@ -18,5 +18,5 @@ export const grammarExerciseType = {
 } as const;
 
 export type GrammarType = (typeof grammarType)[keyof typeof grammarType];
-export type GrammarExercise =
+export type GrammarExerciseType =
   (typeof grammarExerciseType)[keyof typeof grammarExerciseType];
