@@ -15,7 +15,6 @@ export const GrammarExerciseDocument = ({
         id: "1",
         name: "Affirmative Sentences",
         description: "Practice forming affirmative sentences in present simple",
-        type: "fill-in-the-blank",
         group: "affirmative",
         questions: [
           {
@@ -54,7 +53,6 @@ export const GrammarExerciseDocument = ({
         id: "2",
         name: "Negative Sentences",
         description: "Practice forming negative sentences in present simple",
-        type: "fill-in-the-blank",
         group: "negative",
         questions: [
           {
@@ -99,7 +97,6 @@ export const GrammarExerciseDocument = ({
         id: "3",
         name: "Yes/No Questions",
         description: "Practice forming yes/no questions in present simple",
-        type: "fill-in-the-blank",
         group: "yes-no",
         questions: [
           {
@@ -122,7 +119,6 @@ export const GrammarExerciseDocument = ({
         id: "4",
         name: "Wh-Questions",
         description: "Practice forming wh-questions in present simple",
-        type: "fill-in-the-blank",
         group: "question",
         questions: [
           {
@@ -143,8 +139,7 @@ export const GrammarExerciseDocument = ({
         id: "5",
         name: "Practice",
         description: "Mixed practice of present simple tense",
-        type: "fill-in-the-blank",
-        group: "mixed",
+        group: "practice",
         questions: [
           {
             question: "Sarah <input0> (go) to the gym every morning.",
@@ -217,7 +212,11 @@ export const GrammarExerciseDocument = ({
     <main {...props} className={cn("flex flex-col gap-6", className)}>
       {documentExercises.map((exercise) => {
         return (
-          <ExerciseSection key={exercise.id} label={exercise.name}>
+          <ExerciseSection
+            key={exercise.id}
+            label={exercise.name}
+            description={exercise.description}
+          >
             {exercise.questions.map((question) => {
               return (
                 <ExerciseFillInBlank

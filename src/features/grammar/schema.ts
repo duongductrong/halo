@@ -19,7 +19,7 @@ export const grammarExerciseSchema = z.object({
     z.literal("negative"),
     z.literal("question"),
     z.literal("yes-no"),
-    z.literal("mixed"),
+    z.literal("practice"),
   ]),
 });
 
